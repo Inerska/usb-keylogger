@@ -3,9 +3,12 @@ add_rules("mode.debug", "mode.release")
 add_rules("mode.debug", "mode.release")
 add_rules("plugin.vsxmake.autoupdate")
 
+add_requires("glfw")
+add_packages("glfw")
+
 target("usb-keylogger")
-    set_kind("binary")
-    add_files("src/*.cpp")
+set_kind("binary")
+add_files("src/*.cpp")
 
 --
 -- If you want to known more usage about xmake, please see https://xmake.io
